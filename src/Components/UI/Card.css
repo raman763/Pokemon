@@ -1,0 +1,28 @@
+.box_container{
+ display: flex;
+ flex-wrap: wrap;
+}
+.box{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: rgba(244, 244, 244, 0.486);
+ border: 2px solid yellow;
+ box-shadow: 5px 10px 5px 10px rgb(26, 26, 21);
+ width: 200px;
+ height: 350px;
+ margin: 25px;
+}
+.imageGraphic{
+
+ width: 199px;
+ height: 310px;
+ background-color: black;
+}
+.titlePokemon{
+text-align: center;
+}
+.description{
+ text-align: center;
+}
