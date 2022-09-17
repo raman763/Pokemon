@@ -2,16 +2,21 @@ import React from "react";
 import "./Card.css";
 const CardUI = (props) => {
   console.log(props)
+  const getImageUrl = (pokemonUrl) => {
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${+pokemonUrl
+      .split("pokemon/")[1]
+      .match(/\d+/)[0]}.png`;
+  };
   return (
     <div className="box_container">
-      {props.data.map((data) => (
-        <div key={data.id} className="box">
+      {props.data.map((data,index) => (
+        <div key={index} className="box">
           <div className="imageGraphic">
-            <img src="" alt="" />
+          <img alt={data.name} src={getImageUrl(data.url)} />
           </div>
           <div className="details_Box">
-          <div className="titlePokemon">{data.name}</div>
-          <div className="description">Description</div>
+          <div className="titlePokemon" >{data.name.toUpperCase()}</div>
+          {/* <div className="description">Description</div> */}
           </div>
         </div>
       ))}

@@ -1,0 +1,16 @@
+a{
+ text-decoration: none;
+ color: rgb(151, 68, 68);
+}
+
+.btn_box{
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+}
+.prev{
+ width: 50%;
+}
+.next{
+ width: 50%;
+}
