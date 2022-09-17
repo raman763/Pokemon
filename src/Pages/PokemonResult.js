@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../Components/Card";
 import Pagination from "../Components/Pagination";
+// import Flip from "./Flip";
 
 
 const PokemonResult = () => {
@@ -32,6 +33,7 @@ const PokemonResult = () => {
    <>
    <Pagination resultData={pokemonApiData} updateResult={updateResult}/>
     <Card result={pokemonApiResult}/>
+    {/* <Flip result={pokemonApiData}/> */}
     <Pagination resultData={pokemonApiData} updateResult={updateResult}/>
    </>
   );
