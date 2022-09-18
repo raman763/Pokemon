@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../Components/Card";
 import Pagination from "../Components/Pagination";
+import Navbar from "../Components/Navbar";
 
 const PokemonResult = () => {
   const [pokemonApiResult, setPokemonApiResult] = useState([]);
@@ -27,6 +28,7 @@ const PokemonResult = () => {
 
   return (
     <>
+      <Navbar />
       <Pagination resultData={pokemonApiData} updateResult={updateResult} />
       <Card result={pokemonApiResult} />
       <Pagination resultData={pokemonApiData} updateResult={updateResult} />
