@@ -4,6 +4,7 @@ img {
 }
 .box_container {
   display: flex;
+  margin: 10px 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -12,9 +13,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 2px solid rgb(16, 196, 19);
-  box-shadow: 5px 10px 5px 10px rgb(26, 26, 21);
   width: 200px;
   height: 350px;
   margin: 25px;
@@ -36,6 +34,7 @@ img {
   text-align: center;
 }
 .flip-card {
+  margin: 10px;
   background-color: transparent;
   width: 300px;
   height: 300px;
@@ -66,12 +65,13 @@ img {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
+  box-shadow: 1px 2px 9px 5px rgb(26 26 21);
   color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
-  color: white;
+  background-color: #052a43;
+  color: rgb(255, 255, 255);
   transform: rotateY(180deg);
 }

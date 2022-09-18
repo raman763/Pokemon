@@ -1,5 +1,4 @@
-import React, { Profiler, useState, useEffect } from "react";
-import "./Paginatoin.css";
+import './UI/Paginatoin.css';
 
 const Pagination = (props) => {
   return (
